@@ -1,2 +1,2 @@
-# Entrega atividades Nivia
- Repositório c# e visual g vulgo atividade da Nívia
+# Entrega-Nivia
+ Exercícios de looping e do posto de gasolina
