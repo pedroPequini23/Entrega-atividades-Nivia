@@ -110,7 +110,7 @@
             btnlimpar.Name = "btnlimpar";
             btnlimpar.Size = new Size(126, 63);
             btnlimpar.TabIndex = 17;
-            btnlimpar.Text = "oi";
+            btnlimpar.Text = "Limpar";
             btnlimpar.UseVisualStyleBackColor = false;
             btnlimpar.Click += btnlimpar_Click;
             // 
