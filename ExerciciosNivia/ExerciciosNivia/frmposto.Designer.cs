@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmposto));
             lbllitros = new Label();
             lbltipo = new Label();
             btncalcular = new Button();
@@ -135,7 +136,7 @@
             txtlitros.Location = new Point(474, 68);
             txtlitros.Name = "txtlitros";
             txtlitros.Size = new Size(202, 23);
-            txtlitros.TabIndex = 10;
+            txtlitros.TabIndex = 1;
             // 
             // txttipo
             // 
@@ -161,6 +162,7 @@
             Controls.Add(lbltipo);
             Controls.Add(lbllitros);
             ForeColor = SystemColors.ControlText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmposto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Posto de Gasolina";

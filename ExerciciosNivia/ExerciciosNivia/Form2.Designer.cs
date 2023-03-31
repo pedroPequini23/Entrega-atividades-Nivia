@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmenquanto));
             btncalcular = new Button();
             btnvoltar = new Button();
             btnlimpar = new Button();
@@ -39,35 +40,41 @@
             // 
             // btncalcular
             // 
+            btncalcular.BackColor = SystemColors.Window;
             btncalcular.Font = new Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btncalcular.ForeColor = SystemColors.ActiveCaptionText;
             btncalcular.Location = new Point(89, 326);
             btncalcular.Name = "btncalcular";
             btncalcular.Size = new Size(131, 67);
             btncalcular.TabIndex = 0;
             btncalcular.Text = "Calcular";
-            btncalcular.UseVisualStyleBackColor = true;
+            btncalcular.UseVisualStyleBackColor = false;
             btncalcular.Click += btncalcular_Click;
             // 
             // btnvoltar
             // 
+            btnvoltar.BackColor = SystemColors.Window;
             btnvoltar.Font = new Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnvoltar.ForeColor = SystemColors.ActiveCaptionText;
             btnvoltar.Location = new Point(561, 326);
             btnvoltar.Name = "btnvoltar";
             btnvoltar.Size = new Size(131, 67);
             btnvoltar.TabIndex = 1;
             btnvoltar.Text = "Voltar";
-            btnvoltar.UseVisualStyleBackColor = true;
+            btnvoltar.UseVisualStyleBackColor = false;
             btnvoltar.Click += btnvoltar_Click;
             // 
             // btnlimpar
             // 
+            btnlimpar.BackColor = SystemColors.Window;
             btnlimpar.Font = new Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnlimpar.ForeColor = SystemColors.ActiveCaptionText;
             btnlimpar.Location = new Point(336, 326);
             btnlimpar.Name = "btnlimpar";
             btnlimpar.Size = new Size(131, 67);
             btnlimpar.TabIndex = 2;
             btnlimpar.Text = "Limpar";
-            btnlimpar.UseVisualStyleBackColor = true;
+            btnlimpar.UseVisualStyleBackColor = false;
             btnlimpar.Click += btnlimpar_Click;
             // 
             // lblresult
@@ -98,7 +105,7 @@
             txtnum.Multiline = true;
             txtnum.Name = "txtnum";
             txtnum.Size = new Size(205, 23);
-            txtnum.TabIndex = 6;
+            txtnum.TabIndex = 1;
             // 
             // txtresult
             // 
@@ -115,6 +122,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(txtresult);
             Controls.Add(txtnum);
@@ -123,6 +131,7 @@
             Controls.Add(btnlimpar);
             Controls.Add(btnvoltar);
             Controls.Add(btncalcular);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmenquanto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tabuada até 10 ENQUANTO";

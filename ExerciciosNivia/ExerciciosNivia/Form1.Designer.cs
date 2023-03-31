@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmexercicios));
             menuStrip1 = new MenuStrip();
             programsToolStripMenuItem = new ToolStripMenuItem();
             postoDeGasolinaToolStripMenuItem = new ToolStripMenuItem();
@@ -57,29 +58,30 @@
             // postoDeGasolinaToolStripMenuItem
             // 
             postoDeGasolinaToolStripMenuItem.Name = "postoDeGasolinaToolStripMenuItem";
-            postoDeGasolinaToolStripMenuItem.Size = new Size(180, 22);
+            postoDeGasolinaToolStripMenuItem.Size = new Size(172, 22);
             postoDeGasolinaToolStripMenuItem.Text = "Posto de Gasolina";
             postoDeGasolinaToolStripMenuItem.Click += postoDeGasolinaToolStripMenuItem_Click;
             // 
             // tabuadaEnquantoToolStripMenuItem
             // 
             tabuadaEnquantoToolStripMenuItem.Name = "tabuadaEnquantoToolStripMenuItem";
-            tabuadaEnquantoToolStripMenuItem.Size = new Size(180, 22);
+            tabuadaEnquantoToolStripMenuItem.Size = new Size(172, 22);
             tabuadaEnquantoToolStripMenuItem.Text = "Tabuada Enquanto";
             tabuadaEnquantoToolStripMenuItem.Click += tabuadaEnquantoToolStripMenuItem_Click;
             // 
             // tabuadaRepitaToolStripMenuItem
             // 
             tabuadaRepitaToolStripMenuItem.Name = "tabuadaRepitaToolStripMenuItem";
-            tabuadaRepitaToolStripMenuItem.Size = new Size(180, 22);
+            tabuadaRepitaToolStripMenuItem.Size = new Size(172, 22);
             tabuadaRepitaToolStripMenuItem.Text = "Tabuada Repita";
             tabuadaRepitaToolStripMenuItem.Click += tabuadaRepitaToolStripMenuItem_Click;
             // 
             // tabuadaParaToolStripMenuItem
             // 
             tabuadaParaToolStripMenuItem.Name = "tabuadaParaToolStripMenuItem";
-            tabuadaParaToolStripMenuItem.Size = new Size(180, 22);
+            tabuadaParaToolStripMenuItem.Size = new Size(172, 22);
             tabuadaParaToolStripMenuItem.Text = "Tabuada Para";
+            tabuadaParaToolStripMenuItem.Click += tabuadaParaToolStripMenuItem_Click;
             // 
             // sairToolStripMenuItem
             // 
@@ -93,8 +95,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
+            BackgroundImage = Properties.Resources.caveira;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "frmexercicios";
             StartPosition = FormStartPosition.CenterScreen;

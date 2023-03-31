@@ -10,36 +10,29 @@ using System.Windows.Forms;
 
 namespace ExerciciosNivia
 {
-    public partial class frmrepita : Form
+    public partial class frmpara : Form
     {
-        public frmrepita()
+        public frmpara()
         {
             InitializeComponent();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btncalcular_Click(object sender, EventArgs e)
         {
-            int num, result, i;
+            int i, num, result;
 
             num = Convert.ToInt32(txtnum.Text);
 
-
-            i = 1;
-
-            do
+            for (i = 0; i <= 10; i++)
             {
                 result = num * i;
-
                 txtresult.Text = String.Concat(txtresult.Text, "\r\n", result.ToString());
-                i++;
-            } while (i < 11);
-        }
-
-        private void btnvoltar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmexercicios fm = new frmexercicios();
-            fm.Show();
+            }
         }
 
         private void btnlimpar_Click(object sender, EventArgs e)
@@ -47,7 +40,13 @@ namespace ExerciciosNivia
             txtnum.Clear();
             txtresult.Clear();
             txtnum.Focus();
+        }
 
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmexercicios fm = new frmexercicios();
+            fm.Show();
         }
     }
 }

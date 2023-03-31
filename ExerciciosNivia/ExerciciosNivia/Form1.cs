@@ -37,5 +37,12 @@ namespace ExerciciosNivia
             frmrepita fm = new frmrepita();
             fm.Show();
         }
+
+        private void tabuadaParaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmpara fm = new frmpara();
+            fm.Show();
+        }
     }
 }
